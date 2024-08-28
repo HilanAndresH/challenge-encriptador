@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Challenge encriptador de texto</title>
+    
+</head>
+<body>
+    <header>
+       <img class="logo" src="./assets/Logo.png" alt="Logo de alura">
+    </header>
+    <main class="main">
+       <section class="section-txt">
+         <textarea class="txt-usuario" name="textoUsuario" id="" cols="20" rows="10" oninput="validarCaracter()">Ingrese un texto aquí</textarea>
+         <div>
+            <h6 class="info">Solo letras minúsculas y sin acentos</h6>
+         </div>
+         <div class="section-txt-buttons">
+            <button class="btn-encriptar" onclick="btnEncriptar()">Encriptar</button>
+            <button class="btn-desencriptar" onclick="btnDesEncriptar()">Desencriptar</button>
+         </div>
+         </section>
+       <section class="section-msg">
+         <textarea class="txt-mensaje" cols="20" rows="10"></textarea>
+         <div>
+            <button class="btn-copiar" onclick="btnCopiar()">Copiar</button>
+         </div>
+       </section>
+    </main>
+    <footer class="footer">
+         <div>
+            <p>Desarrollado por: Hilan Andrés Hernández</p>
+         </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
